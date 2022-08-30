@@ -8,7 +8,7 @@
         <div>Nome: {{ $comic->title }}</div>
         <div>Tipo: {{ $comic->series }}</div>
         <div>
-            {{-- <a href="{{ route('pastas.show', ['pasta' => $pasta->id]) }}">Dettagli prodotto</a> --}}
+            <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">Dettagli prodotto</a>
         </div>
     </div>
         
