@@ -8,7 +8,14 @@
 </head>
 <body>
     <header>
-  <h2>sono un header</h2>
+        <ul>
+            <li>
+                <a href="{{route('home')}}">Home</a>
+            </li>
+            <li>
+                <a href="{{route('comics.index')}}">Fumetti</a>
+            </li>
+        </ul>
     </header>
 
     <main>
