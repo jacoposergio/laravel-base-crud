@@ -10,6 +10,9 @@
         <div>
             <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">Dettagli prodotto</a>
         </div>
+        <div>
+            <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica prodotto</a>
+        </div>
     </div>
         
     @endforeach

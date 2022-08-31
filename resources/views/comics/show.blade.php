@@ -4,7 +4,22 @@
 
 <h1>{{$comic->title}}</h1>
 
-<div>{{$comic->series}}</div>
-<div>{{$comic->price}}</div>
+@if ($comic->description)
+        <div>
+            <p>{!! $comic->description !!}</p>
+        </div>
+    @endif
+<br>
+<div>
+    <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
+</div>
+<br>
+<div>Prezzo: {{$comic->price}}$</div>
+<br>
+<div>Serie: {{$comic->series}}</div>
+<br>
+<div>Data acquisto: {{$comic->sale_date}}</div>
+<br>
+<div>Tipo: {{$comic->type}}</div>
     
 @endsection
